@@ -16,9 +16,9 @@ function getListStudents() {
     location: 'San Francisco',
   };
 
-  arrayOfObjects[0] = [SanFrancisco];
-  arrayOfObjects[1] = [Columbia];
-  arrayOfObjects[2] = [Serena];
+  arrayOfObjects[0] = SanFrancisco;
+  arrayOfObjects[1] = Columbia;
+  arrayOfObjects[2] = Serena;
 
   return arrayOfObjects;
 }

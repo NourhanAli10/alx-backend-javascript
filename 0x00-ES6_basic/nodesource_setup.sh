@@ -92,7 +92,7 @@ configure_repo() {
 }
 
 # Define Node.js version
-NODE_VERSION="18.x"
+NODE_VERSION="20.x"
 
 # Check OS
 check_os

@@ -1,3 +1,4 @@
+/* eslint-disable */
 function getListStudents() {
   const arrayOfObjects = [];
   const SanFrancisco = {

@@ -1,3 +1,4 @@
+/* eslint-disable */
 function getListStudents() {
   return [
     { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
@@ -6,4 +7,4 @@ function getListStudents() {
   ];
 }
 
-export default getListStudents;
+module.exports = getListStudents;

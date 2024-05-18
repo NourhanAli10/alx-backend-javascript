@@ -13,6 +13,9 @@ export default class SkyHighBuilding extends Building {
   }
 
   set floors(value) {
+    if (typeof floors !== 'number') {
+      throw new TypeError('Floors must be a number');
+    }
     // eslint-disable-next-line no-underscore-dangle
     this._floors = value;
   }

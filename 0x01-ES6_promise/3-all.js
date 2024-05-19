@@ -1,11 +1,10 @@
-// eslint-disable-next-line import/no-unresolved, import/extensions
+// eslint-disable-next-line import/no-unresolved
 import { uploadPhoto, createUser } from './utils';
 
 function handleProfileSignup() {
-  return Promise.all([uploadPhoto(), createUser()])
-    .then((values) => {
-      const [photo, user] = values;
-      console.log(`${photo} ${user.firstName} ${user.lastName}`);
+  Promise.all([uploadPhoto(), createUser()])
+    .then(([photoResponse, userResponse]) => {
+      console.log(`${photoResponse.body} ${userResponse.firstName} ${userResponse.lastName}`);
     })
     .catch(() => {
       console.log('Signup system offline');
